@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red; /* Cor de fundo padrão */
+}
+
+.background-fireworks {
+    background: url('img/fireworks.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.painel {
+    margin: auto;
+    margin-top: 60px;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    z-index: 1; /* Ensure the panel is above the background GIF */
+}
+
+#sim {
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: -50px;
+}
+
+#nao {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 10px;
+}
+
+.mensagem {
+    background-color: #000000;
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure the message is above the background GIF */
+}
+
+.mensagem h2, .mensagem p {
+    color: white;
+}
+
+.gif-animado {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .painel {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+}
+  
